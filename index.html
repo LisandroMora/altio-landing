@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://altiosafi.com/" class="fade">
+                <img src="assets/logo_full.svg" alt="logo">
+            </a>
+        </nav>
+        <div class="title">
+            <h1 class="revealLeft">Fondo Abierto <br />  Liquidez Pesos</h1>
+            <div>
+                <p>Para quien busca</p>
+                <div class="carousel-container" data-simple-slider>
+                    <p>generar rendimientos atractivos.</p>
+                    <p>mantener un alto nivel de liquidez.</p>
+                    <p>flexibilidad al invertir.</p>
+                    <p>proteger su capital.</p>
+                    <p>potenciar su dinero.</p>
+                </div>
+            </div>
+            <a href="#video" class="fade">Iniciar</a>
+        </div>
+        <div class="shape revealUp">
+            <img src="assets/gifs/gif_web.gif" alt="shape" class="web">
+            <img src="assets/gifs/gif_mobile.gif" alt="shape" class="mobile">
+        </div>
+    </header>
+    <section class="video" id="video">
+        <video src="assets/videos/video_1.mp4" id="video-player" muted playsinline></video>
+        <div class="controls">
+            <p>Estás escuchando</p>
+            <h3 id="video-title">¿Qué es un Fondo de Inversión?</h3>
+            <span><b>Rossi Abreu,</b> Promotora SIVPFI-032 </span>
+            <div class="player">
+                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" id="play-button">
+                    <circle cx="26" cy="26" r="26" fill="url(#paint0_linear_216_17)"/>
+                    <path d="M33.2231 22.6353L24.9223 16.8052C24.2739 16.3504 23.5068 16.0765 22.7059 16.0139C21.905 15.9512 21.1016 16.1021 20.3848 16.45C19.6679 16.7979 19.0657 17.3291 18.6448 17.9847C18.2238 18.6404 18.0007 19.3948 18 20.1645V31.8306C17.9988 32.601 18.2207 33.3567 18.6413 34.0135C19.0618 34.6702 19.6644 35.2023 20.3819 35.5506C21.0994 35.8988 21.9037 36.0494 22.7054 35.9858C23.507 35.9221 24.2744 35.6466 24.9223 35.1899L33.2231 29.3598C33.7738 28.9727 34.2217 28.4667 34.5304 27.883C34.8391 27.2992 35 26.654 35 25.9996C35 25.3453 34.8391 24.7001 34.5304 24.1163C34.2217 23.5326 33.7738 23.0266 33.2231 22.6395V22.6353Z" fill="white"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_216_17" x1="52" y1="26" x2="0" y2="26" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#209542"/>
+                    <stop offset="1" stop-color="#89C03D"/>
+                    </linearGradient>
+                    </defs>
+                </svg>    
+                <div class="progress-bar">
+                    <div class="progress" id="video-progress"></div> 
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <div class="more-videos">
+                    <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg" id="repeat-button">
+                        <path d="M70.9969 37.6568C70.7368 39.3678 70.5544 41.0963 70.204 42.7883C67.2196 57.1378 55.5469 68.1873 41.0484 70.439C21.8893 73.4107 4.07342 60.6708 0.638686 41.5197C-0.212934 36.7547 -0.0508369 31.8637 1.11441 27.1655C1.47755 25.6892 2.82861 24.844 4.22407 25.1992C5.58781 25.5464 6.37118 26.8816 6.02548 28.3374C4.26317 35.6828 5.29928 43.4213 8.93185 50.0444C12.5644 56.6675 18.5331 61.7006 25.6745 64.1626C43.2859 70.2725 62.3133 59.0375 65.4769 40.6602C68.3487 24.0463 57.3055 8.33946 40.6963 5.52634C31.759 4.01354 23.7288 6.20821 16.5929 11.7948C16.3059 12.02 16.0411 12.2705 15.6002 12.6575H17.0734C18.9446 12.6575 20.8174 12.6575 22.6886 12.6575C24.2886 12.6575 25.4303 13.7389 25.4192 15.2058C25.4081 16.6425 24.2791 17.7128 22.7234 17.716C18.61 17.7255 14.4971 17.7255 10.3847 17.716C8.74504 17.7128 7.71272 16.6504 7.71272 14.9679C7.71272 11.0654 7.75554 7.16284 7.68893 3.26189C7.66198 1.71102 8.16466 0.6121 9.60928 0H10.8779C12.3114 0.618443 12.8823 1.70468 12.7871 3.2603C12.7078 4.57172 12.7713 5.89106 12.7713 7.20724V8.38069C13.0615 8.15552 13.2073 8.04768 13.3485 7.93351C17.7823 4.29696 23.046 1.81245 28.6716 0.700902C30.2129 0.393266 31.7828 0.225177 33.34 0H37.9276C39.5879 0.260063 41.2577 0.461453 42.9069 0.792875C56.6728 3.52988 67.9237 15.0408 70.3657 28.8607C70.6131 30.2561 70.7875 31.6627 71 33.0645L70.9969 37.6568Z" fill="white"/>
+                        <path d="M25.4287 35.451C25.4287 32.8425 25.4287 30.2355 25.4287 27.6269C25.4287 25.5892 26.2216 23.9797 28.0072 22.9696C29.8213 21.9404 31.6369 22.1006 33.3908 23.1963C37.5439 25.7906 41.708 28.3643 45.8484 30.976C49.4227 33.2294 49.4211 37.6536 45.8484 39.9086C41.7065 42.5203 37.5407 45.0924 33.3908 47.6914C31.6354 48.7904 29.826 48.96 28.0103 47.9309C26.1947 46.9017 25.4097 45.2668 25.4271 43.1974C25.4446 40.6158 25.4287 38.0326 25.4287 35.451ZM43.4318 35.4415L30.5586 27.3811V43.5035L43.4318 35.4415Z" fill="white"/>
+                    </svg>
+                    <p>Quiero saber más sobre:</p>
+                    <button id="next-video">¿Qué es un Fondo Abierto?</button>
+                    <button id="next-two-video">Diferencia entre Puesto de Bolsa y SAFI</button>
+                    <button id="next-three-video">¿Por qué invertir en un Fondo Abierto?</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="container">
+            <div class="rentability">
+                <div class="revealLeft">
+                    <div>
+                        <span id="increase-number">17.66</span><span>%</span>
+                        <div>
+                            <span class="date">Al cierre del 31 de mayo 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="revealRight">Rentabilidad anualizada de los últimos 30 dias*</p>
+            </div>
+            <div class="disclaimer fade">
+                *La rentabilidad o ganancia obtenida en el pasado por el Fondo Abierto, no garantiza que esta se repita en el futuro.
+            </div>
+            <div class="discover fade">
+                <p>
+                    Descubre por qué somos los líderes en <br /> 
+                    <span>Administración de Fondos de Inversión</span>
+                </p>
+            </div>
+            <div class="products">
+                <div class="revealLeft">
+                    <img src="assets/altioteam.svg" alt="Renta fija">
+                    <h3>Gestión Profesional</h3>
+                    <p>Equipo de expertos con alta experiencia
+                        y conocimiento del mercado, así como buena
+                        gestión y track récord de los fondos administrados,
+                        siendo 
+                    <b>lideres en sus categorías.</b></p>
+                </div>
+                <div class="revealUp">
+                    <img src="assets/inmobiliario.svg" alt="Fondo inmobiliario">
+                    <h3>Inversión Segura</h3>
+                    <p>Calificación de riesgo sustentada <b>en el alto nivel
+                        de nuestras estructuras</b> y políticas para la gestión
+                        de fondos, además del respaldo
+                        de importante grupo económico del país.</p>
+                </div>
+                <div class="revealRight">
+                    <img src="assets/energia.svg" alt="Fondo energia">
+                    <h3>SAFI más grande del país</h3>
+                    <p>Somos la Sociedad con más activos bajo
+                        administración del mercado, además de contar
+                        con el <b> 19.5% del Market Share.</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="benefits revealUp">
+                <h2>Rentabiliza tu capital <br />
+                    y el de tu empresa para obtener:</h2>
+                <div class="items">
+                    <div class="item"><span>Diversificación de Portafolio</span></div>
+                    <div class="item"><span>Disponibilidad Rápida</span></div>
+                    <div class="item"><span>Gran Flexibilidad</span></div>
+                    <div class="item"><span>Retornos Competitivos</span></div>
+                </div>
+            </div>
+            <h2 class="revealDown">Quiero seguir hablando  <br /> sobre este
+                Fondo con:</h2>
+            <div class="members">
+                <div class="member revealLeft">
+                    <img src="assets/rossi_abreu.png" alt="Rossi Abreu">
+                    <div class="info">
+                        <div>
+                            <h4>Rossi Abreu</h4>
+                            <p>SIVPFI-032, Promotora</p>
+                        </div>
+                        <a href="https://calendly.com/rossi-abreu">
+                            <img src="assets/calendar.svg" alt="Calendario">
+                        </a>
+                    </div>
+                </div>
+                <div class="member revealRight">
+                    <img src="assets/carlos_castillo.png" alt="Carlos Castillo">
+                    <div class="info">
+                        <div>
+                            <h4>Carlos Castillo</h4>
+                            <p>SIVPFI-066, Promotor</p>
+                        </div>
+                        <a href="https://calendly.com/carlos-castillo">
+                            <img src="assets/calendar.svg" alt="Calendario">
+                        </a>
+                    </div>
+                </div>
+                <div class="member revealRight">
+                    <img src="assets/eduardo_turrul.png" alt="Eduardo Turull">
+                    <div class="info">
+                        <div>
+                            <h4>Eduardo Turull</h4>
+                            <p>SIVPFI-056, Promotor</p>
+                        </div>
+                        <a href="https://calendly.com/eduardo-turull">
+                            <img src="assets/calendar.svg" alt="Calendario">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom">
+        <a href="#" class="create-account">Crear mi cuenta</a>
+        <a href="https://altiosafi.com/fund/6" target="_blank" class="revealUp details">
+            Conocer más detalles
+        </a>
+    </div>
+    <script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
+    <script>
+      simpleslider.getSlider();
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.revealUp', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '50px'
+        });
+        sr.reveal('.revealRight', {
+            duration: 2000,
+            origin: 'right',
+            distance: '50px'
+        });
+        sr.reveal('.revealLeft', {
+            duration: 2000,
+            origin: 'left',
+            distance: '50px'
+        });
+        sr.reveal('.revealDown', {
+            duration: 2000,
+            origin: 'top',
+            distance: '50px'
+        });
+        sr.reveal('.fade', {
+            duration: 1500,
+            origin: 'bottom',
+            distance: '0px',
+            opacity: 0
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
